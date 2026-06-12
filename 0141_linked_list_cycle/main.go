@@ -8,7 +8,7 @@ func main() {
 	for _, v := range arr {
 		l.Append(v)
 	}
-    fmt.Println(l.hasCycle())
-    l.Tail.Next = l.Head
+	fmt.Println(l.hasCycle())
+	l.Tail.Next = l.Head
 	fmt.Println(l.hasCycle())
 }

@@ -36,8 +36,7 @@ func (l *LinkedList[T]) Append(val T) {
 func (l *LinkedList[T]) Remove() error {
 	if l.Length < 1 {
 		return errors.New("List is empty")
-	}
-	if l.Length == 1 {
+	} else if l.Length == 1 {
 		l.Tail = nil
 		l.Head = nil
 	} else {
@@ -54,12 +53,12 @@ func (l *LinkedList[T]) Remove() error {
 }
 
 func (l *LinkedList[T]) hasCycle() bool {
-    if l.Length < 2 {
+	if l.Length < 2 {
 		return false
 	}
 	slow := l.Head
 	fast := l.Head.Next
-	for; fast != nil && fast.Next != nil; {
+	for fast != nil && fast.Next != nil {
 		slow = slow.Next
 		fast = fast.Next.Next
 		if slow == fast {

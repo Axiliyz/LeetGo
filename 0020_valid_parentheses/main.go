@@ -7,7 +7,7 @@ import (
 
 func isValid(s string) bool {
 	stack := &Stack{}
-	pairs := map[string]string {
+	pairs := map[string]string{
 		")": "(",
 		"]": "[",
 		"}": "{",
@@ -42,7 +42,7 @@ func (s *Stack) add(item string) {
 
 func (s *Stack) remove() (string, error) {
 	if len(s.data) < 1 {
-		return "", errors.New("Wrong operation, size < 1")
+		return "", errors.New("wrong operation, size < 1")
 	}
 	elem := s.data[len(s.data)-1]
 	s.data = s.data[:len(s.data)-1]
@@ -51,7 +51,7 @@ func (s *Stack) remove() (string, error) {
 
 func (s *Stack) peek() (string, error) {
 	if len(s.data) < 1 {
-		return "", errors.New("Wrong operation, size < 1")
+		return "", errors.New("wrong operation, size < 1")
 	}
 	return s.data[len(s.data)-1], nil
 }
