@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Language](https://img.shields.io/badge/Language-Go-00ADD8?style=flat-square&logo=go&logoColor=white&labelColor=0d1117)](https://go.dev)
-[![Total](https://img.shields.io/badge/Решено-1-ffffff?style=flat-square&labelColor=0d1117)](#)
+[![Total](https://img.shields.io/badge/Решено-22-ffffff?style=flat-square&labelColor=0d1117)](#)
 
 </div>
 
